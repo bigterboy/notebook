@@ -3,4 +3,4 @@
 > NOTE FOR IOS
 
 1. Scale image in xcode
-![plot](ios_scale.png)
+![plot](./image/277687562_665811971191641_7304645768922870394_n.png)

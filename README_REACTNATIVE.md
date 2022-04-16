@@ -1,7 +1,12 @@
-# notebook
+# NOTEBOOK
 
-1. jsconfig.json
+> NOTE FOR REACT NATIVE
 
+## Introduction
+
+## REACT_NATIVE
+
+1. Change to use relative path
 {
     "compilerOptions": {
         "baseUrl": "src",
@@ -9,14 +14,12 @@
     "include": ["src"]
 }
 
-2. Debug with safari
-3. 
-- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
+2. Debug via safari: update file AppDelegate
+
+- (NSURL *)sourceURLForBridge:(RCTBridge*)bridge
 {
-#if DEBUG
+if DEBUG
+
   // return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];    // comment this line
   return [NSURL URLWithString: [[[[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot: @"index" fallbackResource:nil] absoluteString] stringByAppendingString:@"&inlineSourceMap=true"]];   // <== add this line
-#else
-  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-#endif
 }

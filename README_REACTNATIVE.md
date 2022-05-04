@@ -7,6 +7,7 @@
 ## REACT_NATIVE
 
 1. Change to use relative path
+Create file `jsconfig.json`
 {
     "compilerOptions": {
         "baseUrl": "src",

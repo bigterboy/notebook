@@ -9,10 +9,12 @@
 1. Change to use relative path
 Create file `jsconfig.json`
 {
-    "compilerOptions": {
-        "baseUrl": "src",
-    },
-    "include": ["src"]
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["src/view/components/*"]
+    }
+  }
 }
 
 2. Debug via safari: update file AppDelegate

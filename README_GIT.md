@@ -32,3 +32,16 @@ Xem lại lịch sử commit
 
 Xem thay đổi trước khi push
 `$ git diff`
+
+Update commit without comment and don't create new commit
+`git commit --amend --no-edit`
+after
+`git reset --hard origin/main`
+
+
+Reset git branch
+`git checkout mybranch`
+`git reset --hard origin/mybranch`
+
+
+add test 1

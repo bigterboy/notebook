@@ -3,17 +3,17 @@
 
 ```typescript
     type Student = {
-    readonly id: number;   =>  readonly read only can not edit
-    name: string;
-    age?: number; // optional
+        readonly id: number;   =>  readonly read only can not edit
+        name: string;
+        age?: number; // optional
 }
 ```
 
 ```typescript
     interface Student {
-    readonly id: number;
-    name: string;
-    age?: number; // optional
+        readonly id: number;
+        name: string;
+        age?: number; // optional
     }
 ```
 

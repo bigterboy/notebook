@@ -20,11 +20,9 @@ export PATH=$ANDROID_HOME/tools/bin:$PATH
 And Last thing to do will be compile `source ~/.zshrc`
 
 
-
-node -v > .nvmrc
-
-.zshrc
-
+2. How to set auto switch node version
+`node -v > .nvmrc`   ==> v14, v16, ....
+Open .zshrc and add this 
 # place this after nvm initialization!
 autoload -U add-zsh-hook
 load-nvmrc() {

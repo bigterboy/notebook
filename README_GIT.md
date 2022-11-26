@@ -42,3 +42,9 @@ after
 Reset git branch
 `git checkout mybranch`
 `git reset --hard origin/mybranch`
+
+> NOTE FOR GITHUB CLI
+1. Login
+`gh auth login`
+2. Logout
+`gh auth logout`

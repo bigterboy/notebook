@@ -98,3 +98,8 @@
     `docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build` 
     ==> only use for production  ==> so it will build image again and don't copy like docker-compose-dev.yml
     ------------HIGHLIGHT--------------
+
+
+
+
+5432 port of postgres can not be change

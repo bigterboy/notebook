@@ -1,0 +1,6 @@
+# NOTEBOOK
+
+> NOTE SQL
+
+1. POSTGRES
+    `INSERT INTO public.user()`

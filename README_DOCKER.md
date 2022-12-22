@@ -107,3 +107,43 @@
 
 
 2. Get all list network inside docker  `docker network ls`
+
+
+
+
+
+3. Zip database
+Sync database
+- Sync database and zip database
+`docker exec -t dev_api_postgres_nestjs  pg_dumpall -c -U user_test | gzip > ./tmp/dump_$(date +"%Y-%m-%d_%H_%M_%S").gz`
+
+`docker exec -t your-db-container pg_dumpall -c -U postgres > dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql`
+`docker exec -t dev_api_postgres_nestjs pg_dumpall -c -U postgres > dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql`
+
+
+docker exec -t your-db-container pg_dumpall -c -U postgres > dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
+
+
+
+When restoring the database, make sure you add -d your-db-name to the restore command if your database isn't named postgres
+
+
+ps is not installed in the base wheezy image. Try this from within the container:
+
+
+
+cat dump_18-12-2022_18_27_00.sql | docker exec -i dev_api_postgres_nestjs psql -U postgres -p 5434
+cat dump_18-12-2022_18_27_00.sql | docker exec -i dev_api_postgres_nestjs psql -U postgres postgres -p 5434
+cat dump_18-12-2022_19_44_41.sql | docker exec -it dev_api_postgres_nestjs psql -U postgres
+cat dump_18-12-2022_19_44_41.sql | docker exec -i dev_api_postgres_nestjs psql -U postgres postgres
+
+
+
+3. Login postgres database
+`su postgres`
+
+4. Export database
+`docker exec -t dev_api_postgres_nestjs pg_dumpall -c -U postgres | gzip > ./backup/dump_$(date +"%Y-%m-%d_%H_%M_%S").gz`
+
+5. Import database
+`gunzip < ./backup/$NAME_DATABASE.gz | docker exec -i dev_api_postgres_nestjs psql -U postgres -d postgres`

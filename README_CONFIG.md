@@ -7,7 +7,6 @@ https://stackoverflow.com/questions/38835931/react-native-adb-reverse-enoent
 `open .bash_profile`
 `open ~/.zshrc`
 `touch ~/.zshrc`
-
 `nano ~/.zshrc`
 
 Add this to zshrc

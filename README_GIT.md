@@ -33,6 +33,9 @@ Xem lại lịch sử commit
 Xem thay đổi trước khi push
 `$ git diff`
 
+Reset brand: 
+`git reset --hard @{u}`
+
 Update commit without comment and don't create new commit
 `git commit --amend --no-edit`
 after

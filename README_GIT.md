@@ -26,6 +26,12 @@ Cập nhật thay đổi
 Cập nhật lên server
 `$ git push origin <name_branch>`
 
+Git gộp nhiều commit thành 1
+git log --oneline
+git rebase -i HEAD~N
+đổi pick thành s với những commit cần gộp
+ESC
+:wq xoá mô tả cũ
 
 Xem lại lịch sử commit
 `$ git log`

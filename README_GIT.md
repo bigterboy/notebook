@@ -42,6 +42,9 @@ Xem thay đổi trước khi push
 Reset brand: 
 `git reset --hard @{u}`
 
+Force
+`git push --force`
+
 Update commit without comment and don't create new commit
 `git commit --amend --no-edit`
 after

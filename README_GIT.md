@@ -39,16 +39,18 @@ Xem lại lịch sử commit
 Xem thay đổi trước khi push
 `$ git diff`
 
-Reset brand: 
-`git reset --hard @{u}`
 
 Force
 `git push --force`
 
 Update commit without comment and don't create new commit
 `git commit --amend --no-edit`
+
 after
 `git reset --hard origin/main`
+
+Reset brand: 
+`git reset --hard @{u}`
 
 
 Reset git branch

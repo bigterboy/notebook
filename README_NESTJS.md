@@ -8,5 +8,9 @@
 Can use `npx prisma migrate dev` for init sql file
 
 
-2. 
-`prisma db seed` thêm database
+2. Add some user before run server
+`prisma db seed` add user, .... to database
+
+3. Generate
+`nest g module post`  ==> create module
+`nest g controller post` ==> create controller

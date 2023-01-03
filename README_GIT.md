@@ -27,11 +27,11 @@ Cập nhật lên server
 `$ git push origin <name_branch>`
 
 Git gộp nhiều commit thành 1
-git log --oneline
-git rebase -i HEAD~N
+`git log --oneline`
+`git rebase -i HEAD~N` ==> N số lượng git commit muốn gọp
 đổi pick thành s với những commit cần gộp
 ESC
-:wq xoá mô tả cũ
+:wqxoá mô tả cũ
 
 Xem lại lịch sử commit
 `$ git log`
@@ -48,14 +48,28 @@ Update commit without comment and don't create new commit
 
 after
 `git reset --hard origin/main`
+example
+`git reset --hard c14809fa`
+
 
 Reset brand: 
 `git reset --hard @{u}`
 
+Rebase
+`git rebase master`
 
 Reset git branch
 `git checkout mybranch`
 `git reset --hard origin/mybranch`
+
+Revert a commit
+`git revert 4945db2`
+
+**# Submodule**
+Add submodule
+`git submodule add https://github.com/bigterboy/core-generic`
+
+
 
 > NOTE FOR GITHUB CLI
 1. Login

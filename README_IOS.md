@@ -95,3 +95,7 @@ add `func textFieldShouldReturn`  ==> fired when press go on keyboard
 `func textFieldDidEndEditing` ==> when user end up with editing input text
 
 `func textFieldShouldEndEditing` ==> we can check if text input = "" we can announcement that user still not yet input anything and return false so that `textFieldShouldReturn` will not run
+
+
+15. Fix `unsupported os version xcode`
+`https://github.com/iGhibli/iOS-DeviceSupport/tree/master/DeviceSupport`

@@ -13,6 +13,9 @@ Action just a javascript object describe a action
 ## REACT_NATIVE
 
 1. Change to use relative path
+
+`yarn add babel-plugin-module-resolver`
+
 Create file `jsconfig.json`
 {
   "compilerOptions": {
@@ -124,3 +127,7 @@ componentWillUnmount()
 ```
 
 emulator @Pixel_C_API_28
+
+
+## Reset React Native
+1. `npm start -- --reset-cache`

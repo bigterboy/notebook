@@ -50,3 +50,8 @@ const b = [ ... a]
 
     }
 ```
+
+
+
+config color for console.log
+`console.log(`%c${name}: ${rerenderCounter.current}`,'color:#205584; font-weight:bold')`

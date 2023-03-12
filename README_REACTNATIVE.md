@@ -113,6 +113,10 @@ componentDidUpdate()
 componentWillUnmount()
 
 
+9. Layout style
+`https://reactnative.dev/docs/layout-props`
+
+
 ## NOTE ANIMATED
 
 1. `useNativeDriver: true`
@@ -131,3 +135,10 @@ emulator @Pixel_C_API_28
 
 ## Reset React Native
 1. `npm start -- --reset-cache`
+
+
+
+## Config
+
+`adb devices`
+`adb -s <device name> reverse tcp:8081 tcp:8081`

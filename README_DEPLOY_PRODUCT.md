@@ -12,6 +12,30 @@
 ==> check version of docker compose
 `docker compose version`
 
+
+
+
+
+Try restarting docker once
+
+sudo systemctl restart docker
+
+Then this one to finally solve the problem .
+
+sudo chmod 666 /var/run/docker.sock
+
+Now try running
+
+docker run hello-world
+
+it will pull the image from docker hub repository and that means your docker is now running properly.
+
+
+
+
+
+
+
 4. Set some variable on environment
 `export SESSION_SECRET="hello"`  
 ==> check : 

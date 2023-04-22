@@ -15,25 +15,21 @@
 
 
 
-
+```bash
 Try restarting docker once
 
-sudo systemctl restart docker
+$ sudo systemctl restart docker
 
 Then this one to finally solve the problem .
 
-sudo chmod 666 /var/run/docker.sock
+$ sudo chmod 666 /var/run/docker.sock
 
 Now try running
 
-docker run hello-world
+$ docker run hello-world
 
 it will pull the image from docker hub repository and that means your docker is now running properly.
-
-
-
-
-
+```
 
 
 4. Set some variable on environment
@@ -69,3 +65,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 source ~/.bashrc
 
 nvm alias default 18
+
+
+12. Public

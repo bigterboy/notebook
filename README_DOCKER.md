@@ -13,6 +13,9 @@
 
 `docker rm name` \\ remove docker
 
+`docker rm -f $(docker ps -a -q)`  ==> remove all docker container
+
+
 `docker ps -a` \\ list all docker
 
 
@@ -20,6 +23,8 @@
 
 `docker exec -it nameContainer bash` \\ check docker có cái gì  ==> `ls -la`
 `docker exec -it node-app bash`
+
+
 
 
 `docker image ls` \\ show all image

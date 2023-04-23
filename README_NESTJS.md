@@ -14,3 +14,6 @@ Can use `npx prisma migrate dev` for init sql file
 3. Generate
 `nest g module post`  ==> create module
 `nest g controller post` ==> create controller
+
+9. `prisma migrate dev`   ==> run migrate cho trường hợp chung chỉ nên dùng cho devlopment
+10. `prisma migrate deploy` ==> applied migrate cho database đã có ==> nên dùng cho production

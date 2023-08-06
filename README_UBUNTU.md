@@ -12,3 +12,8 @@
 `sudo apt install curl`   ==> need use this command line to install curl
 
 `sudo apt install ffmpeg` ==> fix error play live stream on youtube firefox browser
+
+
+`sudo usermod -a -G docker $USER`  ==> fix permission docker   ==> `sudo usermod -a -G docker bigterboy`
+==> `reboot`
+

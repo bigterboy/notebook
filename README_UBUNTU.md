@@ -17,3 +17,6 @@
 `sudo usermod -a -G docker $USER`  ==> fix permission docker   ==> `sudo usermod -a -G docker bigterboy`
 ==> `reboot`
 
+
+
+`./add-menuitem.sh` ==> install smartgit

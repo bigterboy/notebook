@@ -20,3 +20,5 @@ Can use `npx prisma migrate dev` for init sql file
 
 
 11. prisma migrate reset ==> Apply pending migrations to the database in production/staging
+
+12. Generate file in nestjs: `nest g resource users`

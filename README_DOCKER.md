@@ -72,7 +72,7 @@
 `docker run -d --name nginx -p 8081:80 nginx` ==> run nginx 
 
 
-
+`docker log 97c5e6a6e3d3`  ==> log for docker (id)
 
 
 

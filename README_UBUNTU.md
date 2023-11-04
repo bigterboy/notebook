@@ -20,3 +20,8 @@
 
 
 `./add-menuitem.sh` ==> install smartgit
+
+
+
+`sudo apt-get install npm` ==> install npm
+`sudo npm install -g yarn` ==> install yarn ==> check version yarn ==> `yarn --version`

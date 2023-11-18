@@ -25,3 +25,16 @@
 
 `sudo apt-get install npm` ==> install npm
 `sudo npm install -g yarn` ==> install yarn ==> check version yarn ==> `yarn --version`
+
+
+
+
+
+
+2. Install some application
+
+-   Install p3x-redis-ui
+`sudo apt update`
+`sudo apt install snapd`
+`sudo snap install p3x-redis-ui`
+

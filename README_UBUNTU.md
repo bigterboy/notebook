@@ -38,3 +38,17 @@
 `sudo apt install snapd`
 `sudo snap install p3x-redis-ui`
 
+
+3. Bluetooth issues
+
+```sudo modprobe -r btusb```
+```sudo modprobe btusb```
+
+
+4. Install file tar.gz
+
+```
+sudo apt-get install alien
+cd Downloads
+sudo alien -d postman-linux-x64.tar.gz
+```

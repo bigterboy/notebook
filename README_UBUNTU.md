@@ -52,3 +52,5 @@ sudo apt-get install alien
 cd Downloads
 sudo alien -d postman-linux-x64.tar.gz
 ```
+
+~/.local/share/applications/Postman.desktop

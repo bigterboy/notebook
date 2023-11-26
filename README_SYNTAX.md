@@ -78,3 +78,15 @@ colors = {
 }
 
       console.log('\x1b[33m%s\x1b[0m','warning', '🚀 ~ file: versioning.js:29 ~ generateVersioningJSFile ~ error get tag_name from git. You forgot set tag to this commit before build.');
+
+
+
+3. Return array from an object
+const object1 = {
+  a: 'somestring',
+  b: 42,
+  c: false,
+};
+
+console.log(Object.values(object1));
+// Expected output: Array ["somestring", 42, false]

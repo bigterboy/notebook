@@ -41,7 +41,7 @@
 
 3. Bluetooth issues
 
-```sudo modprobe -r btusb```
+```sudo modprobe -r btusb```k6666666666666666666666666666666666666`6
 ```sudo modprobe btusb```
 
 
@@ -54,3 +54,12 @@ sudo alien -d postman-linux-x64.tar.gz
 ```
 
 ~/.local/share/applications/Postman.desktop
+
+
+
+5. Save your personal access token (classic). We recommend saving your token as an environment variable.
+export CR_PAT=YOUR_TOKEN
+
+6. Using the CLI for your container type, sign in to the Container registry service at ghcr.io.
+$ echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
+> Login Succeeded

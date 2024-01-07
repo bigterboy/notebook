@@ -50,7 +50,7 @@ it will pull the image from docker hub repository and that means your docker is 
 
 8. `mkdir app` ==> create folder ==> `cd app` ==> git clone `git clone https://github.com/bigterboy/fortunetellingbackend.git .`
 
-9. install npm ==> `apt install npm`
+9. install npm ==> ````````````````apt install npm````````````````
 
 10. Install yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -

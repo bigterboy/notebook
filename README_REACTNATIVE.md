@@ -146,3 +146,14 @@ cd android && ./gradlew clean && cd ..
 npx react-native start --reset-cache
 pod deintegrate
 ```
+
+## Set up firebase 
+
+```pod
+  # pod 'Firebase', :modular_headers => true
+  # pod 'FirebaseCore', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
+  # pod 'FirebaseCoreExtension', :modular_headers => true
+  # pod 'FirebaseFirestoreInternal', :modular_headers => true
+  $RNFirebaseAsStaticFramework = true
+```

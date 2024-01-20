@@ -157,3 +157,10 @@ pod deintegrate
   # pod 'FirebaseFirestoreInternal', :modular_headers => true
   $RNFirebaseAsStaticFramework = true
 ```
+
+## Run ios with specific iphone version
+
+```sh
+npx react-native run-ios --simulator="iPhone X"
+xcrun simctl list devices # get all current devices
+```

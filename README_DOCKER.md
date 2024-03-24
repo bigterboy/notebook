@@ -75,6 +75,11 @@
 `docker log 97c5e6a6e3d3`  ==> log for docker (id)
 
 
+`sudo netstat -pna | grep 3009`
+sudo kill -9 `sudo lsof -t -i:3009`
+
+
+
 Check network of docker
 `docker network ls`
 

@@ -41,7 +41,7 @@
 
 3. Bluetooth issues
 
-```sudo modprobe -r btusb```k6666666666666666666666666666666666666`6
+```sudo modprobe -r btusb```
 ```sudo modprobe btusb```
 
 

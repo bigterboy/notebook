@@ -74,10 +74,11 @@
 
 `docker log 97c5e6a6e3d3`  ==> log for docker (id)
 
-
-`sudo netstat -pna | grep 3009`
-sudo kill -9 `sudo lsof -t -i:3009`
-
+# Kill current port in use
+```bash
+lsof -i:8080
+kill $(lsof -t -i:8080)
+```
 
 
 Check network of docker

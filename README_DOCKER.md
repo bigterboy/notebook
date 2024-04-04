@@ -161,3 +161,23 @@ cat dump_18-12-2022_19_44_41.sql | docker exec -i dev_api_postgres_nestjs psql -
 
 5. Import database
 `gunzip < ./backup/$NAME_DATABASE.gz | docker exec -i dev_api_postgres_nestjs psql -U postgres -d postgres`
+
+
+
+
+
+With the docker extension installed, workaround for me (on Mac) was:
+
+(cmd-shift-p)
+Go to "Preferences: Open Workspace Settings"
+at the top of the settings, search for "docker path"
+enter Absolute path to docker client executable (in my case "/usr/local/bin/docker")
+
+
+
+# How to push image docker to github
+1. Login
+```
+$ docker login --username {{username}} --password {{token}} ghcr.io
+$ docker login --username {{username}} --password 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 ghcr.io
+```

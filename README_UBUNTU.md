@@ -63,3 +63,6 @@ export CR_PAT=YOUR_TOKEN
 6. Using the CLI for your container type, sign in to the Container registry service at ghcr.io.
 $ echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
 > Login Succeeded
+
+7. Install gh
+sudo apt install gh

@@ -181,3 +181,4 @@ enter Absolute path to docker client executable (in my case "/usr/local/bin/dock
 $ docker login --username {{username}} --password {{token}} ghcr.io
 $ docker login --username {{username}} --password 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 ghcr.io
 ```
+npx kill-port 3001

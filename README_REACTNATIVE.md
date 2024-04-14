@@ -164,3 +164,9 @@ pod deintegrate
 npx react-native run-ios --simulator="iPhone X"
 xcrun simctl list devices # get all current devices
 ```
+
+
+## Can debug android with cable
+```
+adb reverse tcp:8081 tcp:8081
+```

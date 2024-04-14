@@ -142,3 +142,12 @@ rm -rf path_to_submodule
 `gh auth login`
 2. Logout
 `gh auth logout`
+
+
+Error
+error: Couldn't set ORIG_HEAD
+fatal: Cannot update the ref 'ORIG_HEAD'.
+
+```sh
+$ git gc --prune=now
+```

@@ -51,7 +51,7 @@
 `printenv` ==> show all variable env
 
 `docker volume prune` ==> delete all volume
-`docker system prune -a` ==> delete unused volume
+`docker system prune -a` ==> delete unused all include volume, images
 
 
 `docker-compose down -v` ==> down all docker unnesccesary

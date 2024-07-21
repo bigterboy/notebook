@@ -66,3 +66,8 @@ $ echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
 
 7. Install gh
 sudo apt install gh
+
+8. ssh vps digital ocean
+```
+ssh -i ./dokey root@159.65.7.174
+```

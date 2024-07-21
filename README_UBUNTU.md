@@ -69,5 +69,5 @@ sudo apt install gh
 
 8. ssh vps digital ocean
 ```
-ssh -i ./dokey root@159.65.7.174
+`ssh -i ./dokey root@159.65.7.174`
 ```

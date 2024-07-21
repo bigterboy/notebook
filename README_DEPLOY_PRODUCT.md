@@ -53,10 +53,8 @@ it will pull the image from docker hub repository and that means your docker is 
 9. install npm ==> ````````````````apt install npm````````````````
 
 10. Install yarn
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update
-sudo apt-get install yarn -y
+sudo npm install -g yarn
+yarn --version
 
 
 11. Install nvm 
@@ -68,3 +66,20 @@ nvm alias default 18
 
 
 12. Public
+
+ssh -i ./dokey root@159.65.7.174
+
+
+13. Install nvm
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+source ~/.bashrc
+nvm list-remote
+```
+
+
+14. Create public and private key ssh
+```
+ssh-keygen
+```

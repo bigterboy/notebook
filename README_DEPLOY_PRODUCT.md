@@ -83,3 +83,12 @@ ssh-keygen
 docker logout ghcr.io
 docker login ghcr.io
 ```
+
+16. Check cpu usage
+```
+top
+```
+
+```
+docker stats
+```

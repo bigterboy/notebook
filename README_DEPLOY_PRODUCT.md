@@ -8,7 +8,8 @@
 `sh get-docker.sh` 
  ==> check version of docker `docker --version`
 3. Install docker-compose
-`snap install docker`
+`snap install docker`==> need check again
+`apt install docker-compose` ==> need check again
 ==> check version of docker compose
 `docker compose version`
 
@@ -57,14 +58,6 @@ sudo npm install -g yarn
 yarn --version
 
 
-11. Install nvm 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-source ~/.bashrc
-
-nvm alias default 18
-
-
 12. Public
 
 ssh -i ./dokey root@159.65.7.174
@@ -76,10 +69,17 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 source ~/.bashrc
 nvm list-remote
+nvm alias default 20
 ```
 
 
 14. Create public and private key ssh
 ```
 ssh-keygen
+```
+
+15. Can not pull image from github 
+```
+docker logout ghcr.io
+docker login ghcr.io
 ```

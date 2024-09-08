@@ -40,11 +40,7 @@
 
 
 3. Bluetooth issues
-
-```sudo modprobe -r btusb```
-```sudo modprobe btusb```
 ```systemctl restart bluetooth.service```
-
 
 4. Install file tar.gz
 

@@ -4,12 +4,28 @@
 
 1. Update ubunto `sudo apt-get update`
 2. Install docker
-`curl -fsSL https://get.docker.com -o get-docker.sh`
-`sh get-docker.sh` 
+
+-   First, update your existing list of packages:
+```
+sudo apt update
+```
+
+-   Next, install a few prerequisite packages which let apt use packages over HTTPS:
+```
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+apt-cache policy docker-ce
+sudo apt install docker-ce
+sudo systemctl status docker
+```
+
+
  ==> check version of docker `docker --version`
 3. Install docker-compose
-`snap install docker`==> need check again
-`apt install docker-compose` ==> need check again
+
+
+
 ==> check version of docker compose
 `docker compose version`
 

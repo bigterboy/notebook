@@ -68,3 +68,6 @@ tg://proxy?server=XXX.XX.XXX.XXX&port=8443&secret=xxxxx
 https://t.me/proxy?server=XXX.XX.XXX.XXX&port=8443&secret=xxxxx
 
 
+Github: https://github.com/alexbers/mtprotoproxy
+
+

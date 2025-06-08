@@ -81,3 +81,5 @@ nếu kết hợp cả 3 thì vd name phải kiểu string hết nếu không s�
         name: 'Alice',
     }
 ```
+
+should use interface until can not use interface ==> use type

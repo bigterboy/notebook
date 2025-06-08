@@ -164,6 +164,11 @@ pod deintegrate
 npx react-native run-ios --simulator="iPhone X"
 xcrun simctl list devices # get all current devices
 ```
+## Run android with specific android devices
+```sh
+adb devices # list all devices
+npx react-native run-android --deviceId <device_id>
+```
 
 
 ## Can debug android with cable

@@ -173,7 +173,10 @@ Go to "Preferences: Open Workspace Settings"
 at the top of the settings, search for "docker path"
 enter Absolute path to docker client executable (in my case "/usr/local/bin/docker")
 
-
+6. List all docker image ==> show the size of image
+``` bash
+docker images | grep prod_api
+```
 
 # How to push image docker to github
 1. Login
